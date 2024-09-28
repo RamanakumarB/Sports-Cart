@@ -1,0 +1,182 @@
+/* Checkout Page Styles */
+.checkout-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #fdfdfd;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Increased shadow for depth */
+    transition: all 0.3s ease; /* Smooth transitions for hover */
+}
+
+.checkout-title {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2.5rem; /* Increased font size */
+    font-weight: bold;
+    color: #222; /* Darker text for clarity */
+}
+
+.checkout-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.checkout-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #444; /* Darker color for better visibility */
+    font-size: 1.1rem;
+}
+
+.checkout-form input,
+.checkout-form select {
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 1px solid #ddd; /* Lighter border for modern look */
+    border-radius: 6px;
+    background-color: #fff;
+    transition: border-color 0.3s ease; /* Smooth focus effect */
+}
+
+.checkout-form input:focus,
+.checkout-form select:focus {
+    border-color: #0056b3; /* Darker blue focus */
+    box-shadow: 0 0 8px rgba(0, 86, 179, 0.2); /* Subtle focus glow */
+    outline: none;
+}
+
+.order-summary {
+    grid-column: span 2;
+    margin-top: 35px;
+    padding-top: 20px;
+    border-top: 2px solid #f0f0f0; /* Divider for clarity */
+}
+
+.order-summary-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.order-summary-items {
+    list-style: none;
+    padding: 0;
+}
+
+.order-summary-items li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding: 15px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    transition: background-color 0.2s ease;
+}
+
+.order-summary-items li:hover {
+    background-color: #f1f1f1; /* Subtle hover effect */
+}
+
+.order-summary-items li span {
+    font-weight: bold;
+    color: #444;
+}
+
+.total-amount {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 25px;
+    color: #28a745; /* Highlight total amount */
+}
+
+.checkout-btn {
+    grid-column: span 2;
+    background-color: #007bff;
+    color: white;
+    padding: 18px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.checkout-btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4); /* Button hover shadow */
+}
+
+@media (max-width: 768px) {
+    .checkout-form {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .checkout-btn {
+        grid-column: span 1; /* Full width button on small screens */
+    }
+
+    .checkout-container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .checkout-title {
+        font-size: 2rem;
+    }
+
+    .order-summary-title {
+        font-size: 1.6rem;
+    }
+
+    .total-amount {
+        font-size: 1.5rem;
+    }
+
+    .checkout-btn {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .checkout-container {
+        padding: 15px;
+    }
+
+    .checkout-title {
+        font-size: 1.8rem;
+    }
+
+    .checkout-form input,
+    .checkout-form select {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .order-summary-title {
+        font-size: 1.4rem;
+    }
+
+    .total-amount {
+        font-size: 1.3rem;
+    }
+
+    .checkout-btn {
+        font-size: 1.1rem;
+        padding: 12px;
+    }
+}
+

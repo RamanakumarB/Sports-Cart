@@ -1,0 +1,237 @@
+/* Basic container for the homepage */
+.homepage-container {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    padding-top: 80px; /* Adjust this based on the height of your nav */
+}
+
+/* Hero Section */
+.hero-section {
+    background: 'url(./images/hero-banner.jpeg)'; 
+    background-size: cover; /* Ensure the image covers the section */
+    height: 400px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white; /* Text color */
+}
+
+.hero-content {
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.shop-now-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #ff5a5f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.shop-now-btn:hover {
+    background-color: #ff3333;
+}
+
+/* Featured products section */
+.featured-products {
+    padding: 3rem 1.5rem;
+    background-color: white;
+}
+
+.featured-products h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    gap: 2rem;
+    justify-content: center;
+}
+
+.product-item {
+    background-color: #fff;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1 1 200px; /* Allow flexible growth */
+    max-width: 300px; /* Max width for product items */
+}
+
+.product-item img {
+    width: 200px;
+    height:200px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.product-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.product-item p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.buy-now-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now-btn:hover {
+    background-color: #555;
+}
+
+/* Quick Links Section */
+.quick-links {
+    padding: 3rem 1.5rem;
+    background-color: #f5f5f5;
+}
+
+.quick-links h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.links-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.link-btn {
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.link-btn:hover {
+    background-color: #555;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    padding: 1rem;
+    position: fixed; /* Fixed navigation */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around; /* Evenly distribute items */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    flex: 1; /* Each item takes equal space */
+    text-align: center; /* Center align text */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block; /* Full width link */
+    padding: 0.5rem 1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Adjust padding for homepage container */
+.homepage-container {
+    padding-top: 80px; /* Adjust this based on the height of your nav */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .homepage-container {
+        padding-top: 100px; /* Increase padding to avoid nav bar overlap */
+    }
+
+    .hero-section {
+        height: 300px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .product-grid {
+        flex-direction: column; /* Stack product items on small screens */
+        align-items: center; /* Center product items */
+        gap: 1.5rem;
+    }
+
+    .quick-links {
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .homepage-container {
+        padding-top: 120px; /* Further increase padding for very small screens */
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .shop-now-btn,
+    .buy-now-btn,
+    .link-btn {
+        padding: 0.5rem 1rem;
+    }
+
+    .product-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .product-grid {
+        flex-direction: column; /* Stack product items */
+        align-items: center; /* Center product items */
+        gap: 1.5rem;
+    }
+
+    .quick-links h2 {
+        font-size: 1.5rem;
+    }
+}

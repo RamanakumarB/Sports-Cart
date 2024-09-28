@@ -1,0 +1,84 @@
+.product-detail-container {
+    max-width: 600px; /* Maximum width for the detail container */
+    margin: 20px auto; /* Center the container with margins */
+    padding: 20px; /* Add padding for spacing */
+    border: 1px solid #ddd; /* Light border for definition */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #fff; /* White background for contrast */
+}
+
+.product-image {
+    width: 40%; /* Responsive image */
+    border-radius: 8px; /* Rounded corners for images */
+    padding-top: 50px;
+    display: block; /* Ensures it's treated as a block-level element */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+/* Centering the product name */
+.product-name {
+    text-align: center; /* Center align the product name */
+    font-size: 1.8rem; /* Larger font size for visibility */
+    margin: 10px 0; /* Margin for spacing */
+    color: #333; /* Dark color for better readability */
+}
+
+.product-price {
+    font-size: 1.5rem; /* Larger font for price */
+    color: #28a745; /* Green color for price */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+.product-actions {
+    display: flex;
+    justify-content: center; /* Center both buttons */
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px; /* Margin between buttons and product details */
+}
+
+/* Button shared styles */
+.add-to-cart-btn, .view-cart-btn {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+    font-size: 1rem; /* Font size */
+    width: 200px; /* Set a width for buttons */
+    text-align: center; /* Ensure text is centered */
+}
+
+.add-to-cart-btn:hover, .view-cart-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Specific styles for View Cart button */
+.view-cart-btn {
+    background-color: #28a745; /* Green background for View Cart */
+}
+
+.view-cart-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+@media (max-width: 768px) {
+    .product-detail-container {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .product-price {
+        font-size: 1.25rem; /* Slightly smaller price font */
+    }
+
+    .product-actions {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        gap: 15px; /* Space between stacked buttons */
+    }
+
+    .add-to-cart-btn, .view-cart-btn {
+        width: 100%; /* Full-width buttons on smaller screens */
+    }
+}

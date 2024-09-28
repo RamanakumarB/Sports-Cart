@@ -1,0 +1,117 @@
+/* ShoppingCart.css */
+
+.shopping-cart-container {
+    padding: 2rem;
+    padding-top: 80px; /* Adjust for navbar height */
+    background-color: #f9f9f9; /* Light background for contrast */
+    max-width: 1200px; /* Limit width for larger screens */
+    margin: auto; /* Center the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h2 {
+    text-align: center; /* Center the header */
+    color: #333; /* Dark color for better readability */
+    margin-bottom: 1rem; /* Space below the header */
+    
+}
+
+.cart-item {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    background-color: #fff; /* White background for items */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 1rem; /* Padding inside items */
+    margin: 1rem 0; /* Margin between items */
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.cart-item:hover {
+    transform: scale(1.02); /* Slightly scale on hover */
+}
+
+.cart-item-image {
+    width: 100px; /* Fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+    margin-right: 1rem; /* Space between image and text */
+}
+
+.item-details {
+    flex: 1; /* Take available space */
+}
+
+.quantity-adjustment {
+    display: flex; /* Flexbox for buttons */
+    align-items: center; /* Center items vertically */
+    margin: 10px 0; /* Space above and below */
+}
+
+.quantity-adjustment button {
+    background-color: #007bff; /* Primary button color */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 0.5rem 0.8rem; /* Padding */
+    cursor: pointer; /* Pointer on hover */
+    margin: 0 5px; /* Space between buttons */
+    transition: background-color 0.2s; /* Smooth transition */
+}
+
+.quantity-adjustment button:hover {
+    background-color: #0056b3; /* Darker on hover */
+}
+
+.remove-item-btn {
+    background-color: #ff5a5f; /* Red for remove button */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 0.5rem 1rem; /* Padding */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.2s; /* Smooth transition */
+}
+
+.remove-item-btn:hover {
+    background-color: #c41d24; /* Darker red on hover */
+}
+
+h3 {
+    color: #333; /* Dark color for total cost */
+    margin: 1rem 0; /* Space above and below */
+    text-align: right; /* Align total cost to the right */
+}
+
+.checkout-btn {
+    background-color: #28a745; /* Green for checkout button */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 0.75rem 1.5rem; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.2s; /* Smooth transition */
+    display: block; /* Make it a block element */
+    margin: 1rem auto; /* Center button */
+    max-width: 200px; /* Max width for button */
+}
+
+.checkout-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .cart-item {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align to the start */
+    }
+
+    .cart-item-image {
+        margin-bottom: 1rem; /* Space below image */
+    }
+}
+
+
+  

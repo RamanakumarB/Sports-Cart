@@ -1,0 +1,75 @@
+.product-listing-container {
+    padding: 2rem;
+    padding-top: 80px; /* Adjusted for navbar height */
+}
+
+.search-bar {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Product Grid */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center; /* Center items */
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    flex: 1 1 200px; /* Flex-grow and flex-shrink */
+    max-width: 300px; /* Max width for product cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.product-card img {
+    width: 85%;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.buy-now-btn {
+    padding: 0.5rem 1rem;
+    background-color: #ff5a5f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .product-listing-container {
+        padding-top: 100px; /* Adjust padding for mobile */
+    }
+    
+    .product-card {
+        flex: 1 1 45%; /* Two items per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-listing-container {
+        padding-top: 80px; /* Further increase padding for very small screens */
+    }
+
+    .product-card {
+        flex: 1 1 100%; /* One item per row */
+    }
+
+    .search-bar input {
+        font-size: 0.9rem; /* Slightly smaller font */
+    }
+}
