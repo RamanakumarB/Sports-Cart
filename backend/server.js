@@ -16,6 +16,13 @@ dotenv.config(); // Load environment variables
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+app.use(cors(
+    {
+        origin: ["https://deploy-Sports-Cart.vercel.app"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+    ));
 
 // Middleware
 app.use(cors({
